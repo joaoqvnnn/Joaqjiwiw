@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#08080d">
+<title>Entrar — PrimeTelas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<div class="auth-page">
+  <aside class="auth-aside">
+    <a class="logo" href="inicio.html">
+      <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <defs>
+          <linearGradient id="gradC" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#22d3ee"/>
+          </linearGradient>
+        </defs>
+        <rect width="32" height="32" rx="9" fill="url(#gradC)"/>
+        <path d="M13 10.5v11l9-5.5-9-5.5z" fill="#0b0b12"/>
+      </svg>
+      PrimeTelas
+    </a>
+
+    <div class="aside-content">
+      <h2>Bem-vindo de volta. Seu catálogo está esperando.</h2>
+      <ul class="aside-list">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          Acesse suas telas em qualquer dispositivo
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          Suporte humano 24 horas por dia
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          Garantia de 7 dias em todos os planos
+        </li>
+      </ul>
+    </div>
+
+    <p class="aside-foot">&copy; 2025 PrimeTelas — CNPJ 12.345.678/0001-90</p>
+  </aside>
+
+  <main class="auth-main">
+    <div class="auth-card">
+      <a class="logo" href="inicio.html">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <defs>
+            <linearGradient id="gradD" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#22d3ee"/>
+            </linearGradient>
+          </defs>
+          <rect width="32" height="32" rx="9" fill="url(#gradD)"/>
+          <path d="M13 10.5v11l9-5.5-9-5.5z" fill="#0b0b12"/>
+        </svg>
+        PrimeTelas
+      </a>
+
+      <h1>Entrar</h1>
+      <p class="sub">Acesse sua conta para gerenciar suas telas.</p>
+
+      <form id="form-login" novalidate>
+        <div class="field" data-field="email">
+          <label for="email">E-mail <span class="req">*</span></label>
+          <div class="input-wrap">
+            <svg class="leading" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            <input type="email" id="email" name="email" placeholder="voce@email.com" autocomplete="email">
+          </div>
+          <p class="error-msg">Informe um e-mail válido.</p>
+        </div>
+
+        <div class="field" data-field="senha">
+          <label for="senha">Senha <span class="req">*</span></label>
+          <div class="input-wrap has-toggle">
+            <svg class="leading" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+            <input type="password" id="senha" name="senha" placeholder="Sua senha" autocomplete="current-password">
+            <button type="button" class="toggle-pass" data-target="senha" aria-label="Mostrar senha">
+              <svg class="icon-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 12S5 5 12 5s10.5 7 10.5 7-3.5 7-10.5 7S1.5 12 1.5 12z"/><circle cx="12" cy="12" r="3"/></svg>
+              <svg class="icon-eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18"/><path d="M10.6 6.2A10.9 10.9 0 0 1 12 6c7 0 10.5 6 10.5 6a17.6 17.6 0 0 1-3.4 4.2"/><path d="M6.3 6.4A17.4 17.4 0 0 0 1.5 12S5 18 12 18a10.8 10.8 0 0 0 4.4-.9"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>
+            </button>
+          </div>
+          <p class="error-msg">Informe sua senha.</p>
+        </div>
+
+        <a class="link-mini" href="#">Esqueci minha senha</a>
+
+        <label class="checkbox">
+          <input type="checkbox" id="lembrar">
+          <span>Manter conectado neste dispositivo</span>
+        </label>
+
+        <button type="submit" class="btn btn-primary btn-block btn-lg">
+          Entrar na conta
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </form>
+
+      <div class="success-box" id="sucesso">
+        <div class="ok-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        </div>
+        <h2>Login realizado!</h2>
+        <p>Simulação concluída. Redirecionando para a página inicial...</p>
+      </div>
+
+      <p class="auth-switch">Ainda não tem conta? <a href="cadastro.html">Criar conta</a></p>
+    </div>
+  </main>
+</div>
+
+<script>
+(function () {
+  const form  = document.getElementById('form-login');
+  const email = document.getElementById('email');
+  const senha = document.getElementById('senha');
+
+  document.querySelectorAll('.toggle-pass').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const input = document.getElementById(btn.dataset.target);
+      const visivel = input.type === 'password';
+      input.type = visivel ? 'text' : 'password';
+      btn.classList.toggle('visible', visivel);
+      btn.setAttribute('aria-label', visivel ? 'Ocultar senha' : 'Mostrar senha');
+    });
+  });
+
+  function marcar(campo, valido) {
+    const el = document.querySelector('[data-field="' + campo + '"]');
+    if (el) el.classList.toggle('invalid', !valido);
+    return valido;
+  }
+
+  document.querySelectorAll('#form-login input').forEach(function (input) {
+    input.addEventListener('input', function () {
+      const field = input.closest('[data-field]');
+      if (field) field.classList.remove('invalid');
+    });
+  });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    let ok = true;
+    let primeiro = null;
+
+    if (!marcar('email', /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email.value.trim()))) {
+      ok = false; primeiro = email;
+    }
+    if (!marcar('senha', senha.value.length > 0)) {
+      ok = false; if (!primeiro) primeiro = senha;
+    }
+
+    if (!ok) {
+      if (primeiro) primeiro.focus();
+      return;
+    }
+
+    form.style.display = 'none';
+    document.getElementById('sucesso').style.display = 'block';
+
+    setTimeout(function () {
+      window.location.href = 'inicio.html';
+    }, 2000);
+  });
+})();
+</script>
+
+</body>
+</html>
