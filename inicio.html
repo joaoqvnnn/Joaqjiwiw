@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#08080d">
+<meta name="description" content="PrimeTelas — assinaturas de telas premium: Netflix, YouTube Premium, Disney+, Max, Prime Video e Spotify com ativação imediata.">
+<title>PrimeTelas — Suas telas premium em um só lugar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="container nav-inner">
+    <a class="logo" href="inicio.html">
+      <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <defs>
+          <linearGradient id="gradLogo" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#22d3ee"/>
+          </linearGradient>
+        </defs>
+        <rect width="32" height="32" rx="9" fill="url(#gradLogo)"/>
+        <path d="M13 10.5v11l9-5.5-9-5.5z" fill="#0b0b12"/>
+      </svg>
+      PrimeTelas
+    </a>
+
+    <nav class="nav-links">
+      <a href="#vantagens">Vantagens</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#planos">Planos</a>
+      <a href="#empresa">Empresa</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="entrar.html" class="btn btn-ghost">Entrar</a>
+      <a href="cadastro.html" class="btn btn-primary">Criar conta</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge"><span class="pulse"></span> Ativação em minutos &bull; Garantia de 7 dias</span>
+        <h1>Suas telas <span class="grad">premium</span> em um só lugar.</h1>
+        <p class="lead">
+          Netflix, YouTube Premium, Disney+, Max, Prime Video e Spotify com qualidade até 4K,
+          sem fidelidade, sem burocracia e com suporte humano todos os dias.
+        </p>
+        <div class="hero-actions">
+          <a href="cadastro.html" class="btn btn-primary btn-lg">
+            Criar minha conta
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#planos" class="btn btn-ghost btn-lg">Ver planos</a>
+        </div>
+        <div class="trust">
+          <div class="stars" aria-label="Avaliação 4,9 de 5">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.6l1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.6l1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.6l1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.6l1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9 4.8 17.6l1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+          </div>
+          <small><b>4,9/5</b> — mais de 12.000 clientes ativos</small>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="screen-panel">
+          <div class="screen-top">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="screen-url">app.primetelas.com</span>
+          </div>
+          <div class="tiles">
+            <div class="tile" style="--brand:#e50914">N</div>
+            <div class="tile" style="--brand:#ff0033">YT</div>
+            <div class="tile" style="--brand:#3b82f6">D+</div>
+            <div class="tile" style="--brand:#8b5cf6">MAX</div>
+            <div class="tile" style="--brand:#00a8e1">PV</div>
+            <div class="tile" style="--brand:#1db954">S</div>
+          </div>
+        </div>
+        <div class="float-card float-1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.5 13.5H11L10 22l8.5-11.5H12L13 2z"/></svg>
+          <div><strong>Ativação imediata</strong><span>em até 5 minutos</span></div>
+        </div>
+        <div class="float-card float-2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.4-7 10-4-1.6-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4.5"/></svg>
+          <div><strong>Garantia de 7 dias</strong><span>ou seu dinheiro de volta</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MARCAS ================= -->
+  <section class="brands">
+    <div class="container">
+      <p>Compatível com as principais plataformas</p>
+      <div class="brand-row">
+        <span class="brand-pill"><span class="brand-dot" style="--brand:#e50914"></span>Netflix</span>
+        <span class="brand-pill"><span class="brand-dot" style="--brand:#ff0033"></span>YouTube Premium</span>
+        <span class="brand-pill"><span class="brand-dot" style="--brand:#3b82f6"></span>Disney+</span>
+        <span class="brand-pill"><span class="brand-dot" style="--brand:#8b5cf6"></span>Max</span>
+        <span class="brand-pill"><span class="brand-dot" style="--brand:#00a8e1"></span>Prime Video</span>
+        <span class="brand-pill"><span class="brand-dot" style="--brand:#1db954"></span>Spotify</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VANTAGENS ================= -->
+  <section class="section" id="vantagens">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Por que a PrimeTelas</span>
+        <h2>Entretenimento sem dor de cabeça</h2>
+        <p>Reunimos tudo o que você precisa para assistir e ouvir com tranquilidade: acesso rápido, suporte real e preço justo.</p>
+      </div>
+
+      <div class="grid-cards">
+        <article class="card">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.5 13.5H11L10 22l8.5-11.5H12L13 2z"/></svg>
+          </div>
+          <h3>Ativação imediata</h3>
+          <p>Receba seus acessos por e-mail e WhatsApp em até 5 minutos após a confirmação do pagamento.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.4-7 10-4-1.6-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4.5"/></svg>
+          </div>
+          <h3>Garantia de 7 dias</h3>
+          <p>Se algo não funcionar como o esperado, devolvemos 100% do valor sem perguntas complicadas.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 21l1.9-5.6A8.5 8.5 0 1 1 21 11.5z"/></svg>
+          </div>
+          <h3>Suporte humano 24/7</h3>
+          <p>Atendimento por WhatsApp e e-mail todos os dias, inclusive feriados. Sem robôs infinitos.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4L13 21l-9-9V4h8l8.6 8.6a1 1 0 0 1 0 1.4z"/><circle cx="7.5" cy="7.5" r="1.3"/></svg>
+          </div>
+          <h3>Preço justo</h3>
+          <p>Planos a partir de R$ 19,90 por mês, sem taxas escondidas e sem contrato de fidelidade.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMO FUNCIONA ================= -->
+  <section class="section" id="como-funciona">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Como funciona</span>
+        <h2>Três passos e pronto</h2>
+        <p>Do cadastro ao primeiro play em poucos minutos. Simples assim.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">PASSO 01</span>
+          <h3>Escolha seu plano</h3>
+          <p>Selecione quantas telas você precisa e quais plataformas deseja incluir no pacote.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">PASSO 02</span>
+          <h3>Crie sua conta</h3>
+          <p>Preencha seus dados em menos de um minuto. É rápido, seguro e sem burocracia.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">PASSO 03</span>
+          <h3>Receba os acessos</h3>
+          <p>Enviamos login e senha por e-mail e WhatsApp. Ative, aperte o play e aproveite.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PLANOS ================= -->
+  <section class="section" id="planos">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Planos</span>
+        <h2>Escolha o ideal para você</h2>
+        <p>Sem fidelidade, cancele quando quiser. Todos os planos incluem garantia de 7 dias.</p>
+      </div>
+
+      <div class="plans">
+        <article class="plan">
+          <h3>Essencial</h3>
+          <p class="plan-desc">Para uso individual</p>
+          <div class="plan-price"><span class="cur">R$</span>19<small>,90/mês</small></div>
+          <p class="plan-note">Cobrança mensal, sem fidelidade</p>
+          <ul class="plan-list">
+            <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>1 tela simultânea</li>
+            <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Catálogo completo</li>
+            <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Qualidade Full HD</li>
+            <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Suporte por e-mail</li>
+          </ul>
+          <a href="cadastro.html" class="btn btn-ghost btn-block">Escolher Essencial</a>
+        </article>
+
+        <article class="plan featured">
+          <span class="tag-pop">Mais popular</span>
+          <h3>Família</h3>
+          <p class="plan-desc">Para assistir junto</p>
+          <div class="plan-price"><span class="cur">R$</span>34<small>,90/mês</small></div>
+          <p class="plan-note">Cobrança mensal, sem fidelidade</p>
+          <ul class="plan-list">
+            <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>3 telas simultâneas</li>
+            <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Catálogo completo</li>
+            <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Até 4K quando disponível</li>
+            <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Perfis individuais</li>
+            <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Suporte prioritário</li>
+          </ul>
+          <a href="cadastro.html" class="btn btn-primary btn-block">Escolher Família</a>
+        </article>
+
+        <article class="plan">
+          <h3>Premium</h3>
+          <p class="plan-desc">Experiência completa</p>
+          <div class="plan-price"><span class="cur">R$</span>49<small>,90/mês</small></div>
+          <p class="plan-note">Cobrança mensal, sem fidelidade</p>
+          <ul class="plan-list">
+            <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>5 telas simultâneas</li>
+            <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Catálogo completo em 4K HDR</li>
+            <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Troca de tela garantida</li>
+            <li><svg class="check" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Suporte 24h no WhatsApp</li>
+          </ul>
+          <a href="cadastro.html" class="btn btn-ghost btn-block">Escolher Premium</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Dúvidas frequentes</span>
+        <h2>Tudo o que você precisa saber</h2>
+      </div>
+
+      <div class="faq">
+        <details class="faq-item">
+          <summary>Como recebo meus acessos?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p>Após a confirmação do pagamento, enviamos o login e a senha para o e-mail cadastrado e também pelo WhatsApp em até 5 minutos.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>É seguro comprar aqui?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p>Sim. Todos os pagamentos são processados por gateways certificados e seus dados são criptografados. Além disso, você conta com 7 dias de garantia.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Posso trocar de tela depois?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p>Sim. Nos planos Família e Premium você pode solicitar a troca de tela uma vez por mês diretamente com o nosso suporte.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Como funciona a garantia de 7 dias?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p>Se o serviço não funcionar como esperado dentro dos primeiros 7 dias, basta abrir um chamado no suporte e devolvemos o valor integral pago.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EMPRESA ================= -->
+  <section class="section" id="empresa">
+    <div class="container company-grid">
+      <div>
+        <span class="eyebrow">Sobre a empresa</span>
+        <h2>Transparência em cada detalhe</h2>
+        <p>
+          A PrimeTelas é uma empresa brasileira especializada em assinaturas digitais.
+          Trabalhamos com atendimento humano, políticas claras e dados oficiais sempre
+          disponíveis para consulta.
+        </p>
+        <a href="entrar.html" class="btn btn-ghost">
+          Falar com o suporte
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <div class="company-card">
+        <div class="company-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+          <div>
+            <div class="label">Razão social</div>
+            <div class="value">PrimeTelas Tecnologia LTDA</div>
+          </div>
+        </div>
+
+        <div class="company-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h4M7 13h4M15 9h2M15 13h2"/></svg>
+          <div>
+            <div class="label">CNPJ</div>
+            <div class="value">12.345.678/0001-90</div>
+          </div>
+        </div>
+
+        <div class="company-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <div class="label">Endereço</div>
+            <div class="value">Av. Paulista, 1000 — Sala 1204<br>Bela Vista, São Paulo/SP — CEP 01310-100</div>
+          </div>
+        </div>
+
+        <div class="company-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+          <div>
+            <div class="label">Telefone / WhatsApp</div>
+            <div class="value">(11) 4002-8922</div>
+          </div>
+        </div>
+
+        <div class="company-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          <div>
+            <div class="label">E-mail</div>
+            <div class="value">contato@primetelas.com.br</div>
+          </div>
+        </div>
+
+        <div class="company-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div>
+            <div class="label">Atendimento</div>
+            <div class="value">Segunda a domingo, das 8h às 22h</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA FINAL ================= -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="cta-band">
+        <h2>Pronto para dar o play?</h2>
+        <p>Crie sua conta agora e receba seus acessos em poucos minutos, com garantia de 7 dias.</p>
+        <a href="cadastro.html" class="btn btn-primary btn-lg">
+          Criar conta gratuitamente
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="logo" href="inicio.html">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <defs>
+            <linearGradient id="gradLogo2" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#22d3ee"/>
+            </linearGradient>
+          </defs>
+          <rect width="32" height="32" rx="9" fill="url(#gradLogo2)"/>
+          <path d="M13 10.5v11l9-5.5-9-5.5z" fill="#0b0b12"/>
+        </svg>
+        PrimeTelas
+      </a>
+      <p>Assinaturas de telas premium com ativação imediata, suporte humano e garantia de 7 dias.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="#vantagens">Vantagens</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="#faq">Dúvidas</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Conta</h4>
+      <ul>
+        <li><a href="entrar.html">Entrar</a></li>
+        <li><a href="cadastro.html">Criar conta</a></li>
+        <li><a href="#">Central de ajuda</a></li>
+        <li><a href="#">Política de privacidade</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="#">contato@primetelas.com.br</a></li>
+        <li><a href="#">(11) 4002-8922</a></li>
+        <li><a href="#">Av. Paulista, 1000 — SP</a></li>
+        <li><a href="#">CNPJ 12.345.678/0001-90</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <span>&copy; 2025 PrimeTelas Tecnologia LTDA — CNPJ 12.345.678/0001-90 — Av. Paulista, 1000, Sala 1204, Bela Vista, São Paulo/SP, CEP 01310-100</span>
+    <span class="demo">Projeto demonstrativo — cadastro e login simulados.</span>
+  </div>
+</footer>
+
+</body>
+</html>
