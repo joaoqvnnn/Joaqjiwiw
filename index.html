@@ -3,28 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#08080d">
-<meta name="description" content="PrimeTelas — assinaturas de telas premium: Netflix, YouTube Premium, Disney+, Max, Prime Video e Spotify com ativação imediata.">
+<meta name="theme-color" content="#ffffff">
 <title>PrimeTelas — Suas telas premium em um só lugar</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="estilo.css">
+<script>
+  // Script para carregar o tema antes de renderizar a tela (evita flash)
+  (function() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  })();
+</script>
 </head>
 <body>
 
 <!-- ================= NAVBAR ================= -->
 <header class="navbar">
   <div class="container nav-inner">
-    <a class="logo" href="inicio.html">
+    <a class="logo" href="index.html">
       <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
         <defs>
           <linearGradient id="gradLogo" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#22d3ee"/>
+            <stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#0891b2"/>
           </linearGradient>
         </defs>
         <rect width="32" height="32" rx="9" fill="url(#gradLogo)"/>
-        <path d="M13 10.5v11l9-5.5-9-5.5z" fill="#0b0b12"/>
+        <path d="M13 10.5v11l9-5.5-9-5.5z" fill="#fff"/>
       </svg>
       PrimeTelas
     </a>
@@ -38,6 +46,10 @@
     </nav>
 
     <div class="nav-actions">
+      <button class="theme-btn" id="theme-toggle" aria-label="Alternar tema">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
       <a href="entrar.html" class="btn btn-ghost">Entrar</a>
       <a href="cadastro.html" class="btn btn-primary">Criar conta</a>
     </div>
@@ -74,29 +86,9 @@
         </div>
       </div>
 
+      <!-- AQUI FOI SUBSTITUÍDO PELO LINK DA SUA IMAGEM -->
       <div class="hero-visual">
-        <div class="screen-panel">
-          <div class="screen-top">
-            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-            <span class="screen-url">app.primetelas.com</span>
-          </div>
-          <div class="tiles">
-            <div class="tile" style="--brand:#e50914">N</div>
-            <div class="tile" style="--brand:#ff0033">YT</div>
-            <div class="tile" style="--brand:#3b82f6">D+</div>
-            <div class="tile" style="--brand:#8b5cf6">MAX</div>
-            <div class="tile" style="--brand:#00a8e1">PV</div>
-            <div class="tile" style="--brand:#1db954">S</div>
-          </div>
-        </div>
-        <div class="float-card float-1">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.5 13.5H11L10 22l8.5-11.5H12L13 2z"/></svg>
-          <div><strong>Ativação imediata</strong><span>em até 5 minutos</span></div>
-        </div>
-        <div class="float-card float-2">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.4-7 10-4-1.6-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4.5"/></svg>
-          <div><strong>Garantia de 7 dias</strong><span>ou seu dinheiro de volta</span></div>
-        </div>
+        <img src="https://i.postimg.cc/PxjmDtmr/63648C70-1664-49CE-9740-02B9D0FFB2FD.png" alt="Plataformas PrimeTelas" class="hero-image">
       </div>
     </div>
   </section>
@@ -162,7 +154,7 @@
   </section>
 
   <!-- ================= COMO FUNCIONA ================= -->
-  <section class="section" id="como-funciona">
+  <section class="section" id="como-funciona" style="background: var(--bg-soft);">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Como funciona</span>
@@ -248,7 +240,7 @@
   </section>
 
   <!-- ================= FAQ ================= -->
-  <section class="section" id="faq">
+  <section class="section" id="faq" style="background: var(--bg-soft);">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Dúvidas frequentes</span>
@@ -344,14 +336,6 @@
             <div class="value">contato@primetelas.com.br</div>
           </div>
         </div>
-
-        <div class="company-row">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-          <div>
-            <div class="label">Atendimento</div>
-            <div class="value">Segunda a domingo, das 8h às 22h</div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -375,15 +359,15 @@
 <footer class="footer">
   <div class="container footer-grid">
     <div class="footer-brand">
-      <a class="logo" href="inicio.html">
+      <a class="logo" href="index.html">
         <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
           <defs>
             <linearGradient id="gradLogo2" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#22d3ee"/>
+              <stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#0891b2"/>
             </linearGradient>
           </defs>
           <rect width="32" height="32" rx="9" fill="url(#gradLogo2)"/>
-          <path d="M13 10.5v11l9-5.5-9-5.5z" fill="#0b0b12"/>
+          <path d="M13 10.5v11l9-5.5-9-5.5z" fill="#fff"/>
         </svg>
         PrimeTelas
       </a>
@@ -426,6 +410,21 @@
     <span class="demo">Projeto demonstrativo — cadastro e login simulados.</span>
   </div>
 </footer>
+
+<script>
+  // Lógica do Botão de Tema
+  const themeToggle = document.getElementById('theme-toggle');
+  themeToggle.addEventListener('click', () => {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    if (isDark) {
+      document.documentElement.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'light');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+    }
+  });
+</script>
 
 </body>
 </html>
